@@ -5,8 +5,7 @@
 <ul>
   <li>Purpose</li>
   <li>The project</li>
-  
-
+  <li>Types of tests</li>
 </ul>
 
 <hr>
@@ -27,4 +26,14 @@ In this project I will present some features of Junit5. It will serve as a guide
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maven<br>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lombok to reduce the amount of code<br>
   
+</p>
+
+<h3 align="center"> 
+  Types of tests
+</h3>
+
+<p align="justify">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simple Junit Test<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ParameterizedTest<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ParameterizedTest with CsvSource<br>
 </p>

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
@@ -112,6 +113,22 @@ public class SimpleMathTest {
                 Arguments.of(71D, 14D, 5.07D),
                 Arguments.of(18.3D, 3.1D, 5.90D)
         );
+    }
+
+    @DisplayName("Parameterized Example With CSV")
+    @ParameterizedTest
+    @CsvSource({
+            "6.2, 2, 3.1",
+            "71, 14, 5.07",
+            "18.3, 3.1, 5.90"
+    })
+    void testDivisionParameterizedWithCSV(double firstNumber, double secondNumber, double expected) {
+        // arrange
+        Double actual = simpleMath.division(firstNumber, secondNumber);
+
+        // act // assert
+        Assertions.assertEquals(expected, actual, 2D, () -> firstNumber + "/" + secondNumber +
+                " did not produce " + expected + "!" );
     }
 
 }
