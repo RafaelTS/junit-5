@@ -1,4 +1,4 @@
-package com.rafael.junit_5.math;
+package com.rafael.junit_5.others;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

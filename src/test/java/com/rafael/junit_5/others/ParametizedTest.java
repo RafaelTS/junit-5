@@ -1,5 +1,6 @@
-package com.rafael.junit_5.math;
+package com.rafael.junit_5.others;
 
+import com.rafael.junit_5.math.SimpleMath;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
