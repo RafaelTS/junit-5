@@ -39,5 +39,8 @@ public class PersonServiceTest {
 
         assertNotNull(actual, () -> "createPerson should not have returned null!");
         assertEquals(person.getFirtsName(), actual.getFirtsName(), () -> "createPerson should not returned First Name null or different!");
+        assertEquals(person.getLastName(), actual.getLastName(), () -> "createPerson should not returned Last Name null or different!");
+        assertEquals(person.getAddress(), actual.getAddress(), () -> "createPerson should not returned address null or different!");
+        assertEquals(person.getEmail(), actual.getEmail(), () -> "createPerson should not returned email different!");
     }
 }
