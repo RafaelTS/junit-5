@@ -4,5 +4,5 @@ import com.rafael.junit_5.model.Person;
 
 public interface IPersonService {
 
-    Person createPerson(Person person);
+    Person createPerson(Person person) ;
 }
